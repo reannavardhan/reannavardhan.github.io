@@ -114,6 +114,12 @@ h2, h3 {
     margin-top: 15px; /* Space above the inner box */
     text-align: center; /* Center text in the inner box */
 }
+ul, ol {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
 
 
 /* Footer styles */
