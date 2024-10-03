@@ -8,10 +8,48 @@
     <title>My Portfolio</title>
 </head>
 <body>
+    <nav style="background-color: #007bff; padding: 10px 0; text-align: center;">
+        <a href="#home" style="color: white; text-decoration: none; margin: 0 20px;">Home</a>
+        <a href="#about" style="color: white; text-decoration: none; margin: 0 20px;">About</a>
+        <a href="#projects" style="color: white; text-decoration: none; margin: 0 20px;">Projects</a>
+        <a href="#contact" style="color: white; text-decoration: none; margin: 0 20px;">Contact</a>
+        <form style="display: inline-block; margin: 0 20px;">
+            <input type="text" placeholder="Search..." style="padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
+            <button type="submit" style="padding: 8px; background-color: #0056b3; color: white; border: none; border-radius: 5px;">Search</button>
+        </form>
+    </nav>
+
+    <div class="hero" style="background-image: url('https://source.unsplash.com/1600x900/?tech'); height: 500px; background-position: center; background-repeat: no-repeat; background-size: cover; display: flex; align-items: center; justify-content: center;">
+        <h1 style="color: white; font-size: 3em; text-shadow: 2px 2px 4px #000;">Hi, I'm [Your Name]</h1>
+    </div>
+
     <div class="container">
         <h1>Welcome to My Portfolio</h1>
         <p>This is my website where I showcase my projects and skills.</p>
         <button>Contact Me</button>
+
+        <section id="projects" style="background-color: #f9f9f9; padding: 50px 0;">
+            <div class="container">
+                <h2 style="text-align: center;">My Projects</h2>
+                <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+                    <div class="project-card" style="background-color: #fff; padding: 20px; width: 30%; margin: 20px 0; border: 1px solid #ddd; border-radius: 10px;">
+                        <h3>Private Tutoring in Computer Science</h3>
+                        <p><strong>Description:</strong> Provided one-on-one tutoring for high school students in AP Computer Science A and AP Computer Science Principles, focusing on fundamental concepts in Java programming and problem-solving strategies for the ACSL competition.</p>
+                        <p><strong>Role:</strong> Tutor</p>
+                        <p><strong>Outcome:</strong> Helped students improve their understanding of programming concepts, leading to a significant increase in their confidence and performance in class assessments and competitions.</p>
+                        <p><strong>Skills Used:</strong> Effective communication, teaching methodologies, and curriculum design.</p>
+                    </div>
+
+                    <div class="project-card" style="background-color: #fff; padding: 20px; width: 30%; margin: 20px 0; border: 1px solid #ddd; border-radius: 10px;">
+                        <h3>ACSL Competition Preparation</h3>
+                        <p><strong>Description:</strong> Assisted students in preparing for the American Computer Science League (ACSL) competition by reviewing algorithm design, problem-solving techniques, and programming languages.</p>
+                        <p><strong>Role:</strong> Mentor and Coach</p>
+                        <p><strong>Outcome:</strong> Contributed to the team's successful performance, with several students qualifying for the next level of competition.</p>
+                        <p><strong>Skills Used:</strong> Mentorship, critical thinking, and collaborative learning strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
