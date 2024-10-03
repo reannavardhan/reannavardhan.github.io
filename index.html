@@ -6,21 +6,79 @@
     <meta name="description" content="A personal portfolio website showcasing projects and skills.">
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: #007bff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        .hero {
+            background-image: url('https://source.unsplash.com/1600x900/?tech');
+            height: 400px; /* Reduced height for less vertical space */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+            padding: 20px;
+        }
+        .hero h1 {
+            background-color: black; /* Black background */
+            padding: 10px;
+            margin: 0; /* Remove default margin for less space */
+        }
+        .container {
+            text-align: center;
+        }
+        #projects {
+            background-color: darkorange; /* Dark orange for projects section */
+            padding: 50px 0;
+        }
+        .project-card {
+            background-color: #fff; /* Keep project boxes white */
+            padding: 20px;
+            width: 30%;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            display: inline-block; /* Display inline-block for centering */
+            vertical-align: top;
+        }
+        .project-card h3 {
+            text-align: center; /* Centered headings */
+            font-family: 'Times New Roman', Times, serif; /* Times New Roman for projects */
+        }
+        #about {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+    </style>
 </head>
 <body>
-    <nav style="background-color: #007bff; padding: 10px 0; text-align: center;">
-        <a href="#home" style="color: white; text-decoration: none; margin: 0 20px;">Home</a>
-        <a href="#about" style="color: white; text-decoration: none; margin: 0 20px;">About</a>
-        <a href="#projects" style="color: white; text-decoration: none; margin: 0 20px;">Projects</a>
-        <a href="#contact" style="color: white; text-decoration: none; margin: 0 20px;">Contact</a>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
         <form style="display: inline-block; margin: 0 20px;">
             <input type="text" placeholder="Search..." style="padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
             <button type="submit" style="padding: 8px; background-color: #0056b3; color: white; border: none; border-radius: 5px;">Search</button>
         </form>
     </nav>
 
-    <div class="hero" style="background-image: url('https://source.unsplash.com/1600x900/?tech'); height: 500px; background-position: center; background-repeat: no-repeat; background-size: cover; display: flex; align-items: center; justify-content: center;">
-        <h1 style="color: white; font-size: 3em; text-shadow: 2px 2px 4px #000;">Hi, I'm Reanna! </h1>
+    <div class="hero">
+        <h1>Hi, I'm [Your Name]</h1>
     </div>
 
     <div class="container">
@@ -28,25 +86,29 @@
         <p>This is my website where I showcase my projects and skills.</p>
         <button>Contact Me</button>
 
-        <section id="projects" style="background-color: #f9f9f9; padding: 50px 0;">
-            <div class="container">
-                <h2 style="text-align: center;">My Projects</h2>
-                <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-                    <div class="project-card" style="background-color: #fff; padding: 20px; width: 30%; margin: 20px 0; border: 1px solid #ddd; border-radius: 10px;">
-                        <h3>Private Tutoring in Computer Science</h3>
-                        <p><strong>Description:</strong> Provided one-on-one tutoring for students in AP Computer Science A and AP Computer Science Principles with a focus on the fundamental concepts in Java programming and problem-solving strategies for the ACSL competition.</p>
-                        <p><strong>Role:</strong> Tutor</p>
-                        <p><strong>Outcome:</strong> Helped students improve their understanding of programming concepts, leading to a significant increase in their confidence and performance in class assessments and competitions.</p>
-                        <p><strong>Skills Used:</strong> Effective communication, teaching fundamentals, and curriculum design.</p>
-                    </div>
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>[Your brief bio goes here. Talk about your interests, skills, and what you're passionate about.]</p>
+        </section>
 
-                    <div class="project-card" style="background-color: #fff; padding: 20px; width: 30%; margin: 20px 0; border: 1px solid #ddd; border-radius: 10px;">
-                        <h3>ACSL Competition Preparation</h3>
-                        <p><strong>Description:</strong> Assisted students in preparing for the American Computer Science League (ACSL) competition and First Lego League (FLL) by reviewing algorithm design, problem-solving techniques, and programming languages.</p>
-                        <p><strong>Role:</strong> Mentor and Coach</p>
-                        <p><strong>Outcome:</strong> Contributed to the team's successful performance, with several students qualifying for the next level of competition.</p>
-                        <p><strong>Skills Used:</strong> Mentorship, critical thinking, and collaborative learning strategies.</p>
-                    </div>
+        <section id="projects">
+            <h2 style="color: white;">My Projects</h2>
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+                <div class="project-card">
+                    <h3>Private Tutoring in Computer Science</h3>
+                    <p><strong>Description:</strong> Provided one-on-one tutoring for high school students in AP Computer Science A and AP Computer Science Principles, focusing on fundamental concepts in Java programming and problem-solving strategies for the ACSL competition.</p>
+                    <p><strong>Role:</strong> Tutor</p>
+                    <p><strong>Outcome:</strong> Helped students improve their understanding of programming concepts, leading to a significant increase in their confidence and performance in class assessments and competitions.</p>
+                    <p><strong>Skills Used:</strong> Effective communication, teaching methodologies, and curriculum design.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>ACSL Competition Preparation</h3>
+                    <p><strong>Description:</strong> Assisted students in preparing for the American Computer Science League (ACSL) competition by reviewing algorithm design, problem-solving techniques, and programming languages.</p>
+                    <p><strong>Role:</strong> Mentor and Coach</p>
+                    <p><strong>Outcome:</strong> Contributed to the team's successful performance, with several students qualifying for the next level of competition.</p>
+                    <p><strong>Skills Used:</strong> Mentorship, critical thinking, and collaborative learning strategies.</p>
                 </div>
             </div>
         </section>
