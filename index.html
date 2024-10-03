@@ -51,5 +51,33 @@
             </div>
         </section>
     </div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            const searchTerm = event.target.querySelector('input[type="text"]').value.toLowerCase();
+            
+            // Get all project cards
+            const projects = document.querySelectorAll('.project-card');
+            let found = false;
+
+            // Loop through projects to find matches
+            projects.forEach(project => {
+                const projectTitle = project.querySelector('h3').textContent.toLowerCase();
+                const projectDescription = project.querySelector('p').textContent.toLowerCase();
+
+                if (projectTitle.includes(searchTerm) || projectDescription.includes(searchTerm)) {
+                    project.style.display = 'block'; // Show matched project
+                    found = true;
+                } else {
+                    project.style.display = 'none'; // Hide non-matching project
+                }
+            });
+
+            if (!found) {
+                alert('No projects found matching: ' + searchTerm);
+            }
+        });
+    </script>
 </body>
 </html>
