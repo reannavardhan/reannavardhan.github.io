@@ -1,172 +1,46 @@
-/* Reset some default styles */
-* {
-    box-sizing: border-box; /* Make box-sizing consistent */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Assuming your CSS is in style.css -->
+</head>
+<body>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#freelance">Freelance Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-/* Body styles */
-body {
-    background: linear-gradient(to bottom, #ff7f50, #ffffff); /* Ombre from dark orange to white */
-    font-family: 'Times New Roman', serif; /* All text in Times New Roman */
-    color: #333; /* Text color */
-    cursor: pointer; /* Change cursor to pointer */
-}
+    <section class="hero">
+        <h1>Reanna Vardhanapu</h1>
+        <h2>Welcome to my professional portfolio</h2>
+    </section>
 
-/* Navigation styles */
-nav {
-    background-color: black; /* Header background */
-    padding: 10px; /* Padding for nav */
-    text-align: center; /* Center nav items */
-}
+    <div class="container">
+        <section class="section about-me" id="about">
+            <h2>About Me</h2>
+            <p>I am a freelance web developer and tutor specializing in programming and tech-based projects.</p>
+        </section>
 
-nav a {
-    color: white; /* Link color */
-    margin: 15px; /* Space between links */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make links bold */
-    transition: color 0.3s; /* Smooth color transition */
-}
+        <section class="section" id="freelance">
+            <h2>Freelance Services</h2>
+            <div class="outer-box">
+                <div class="inner-box">
+                    <p>I offer custom website creation, maintenance, and optimization services to enhance online presence. I also provide tutoring services for programming languages like Java and Python. My impact includes helping businesses increase their visibility and streamline user experiences. Prices range from $200 to $800, depending on the scope and complexity of the project.</p>
+                </div>
+            </div>
+        </section>
+    </div>
 
-nav a:hover {
-    color: orange; /* Hover color for links */
-}
-
-/* Hero section styles */
-.hero {
-    text-align: center; /* Center text */
-    padding: 50px 20px; /* Padding for hero section */
-}
-
-.hero h1 {
-    font-size: 3em; /* Font size for name */
-    font-style: italic; /* Italic style */
-    margin: 0; /* Remove margin */
-}
-
-.hero h2 {
-    font-size: 1.5em; /* Font size for welcome text */
-    margin-top: 10px; /* Space between h1 and h2 */
-}
-
-/* Container styles */
-.container {
-    width: 80%; /* Container width */
-    margin: 0 auto; /* Center container */
-}
-
-/* Section styles */
-.section {
-    padding: 20px; /* Padding for sections */
-    margin: 20px 0; /* Space between sections */
-    background-color: white; /* White background for sections */
-    color: black; /* Black text color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.3s; /* Animation for hover effect */
-    
-}
-
-.about-me {
-    text-align: center; /* Center text only for About Me section */
-}
-
-
-.section:hover {
-    transform: translateY(-2px); /* Lift effect on hover */
-}
-
-/* Header styles */
-h2, h3 {
-    text-align: center; /* Center all h2 and h3 headers */
-    font-weight: bold; /* Make headers bold */
-    margin: 20px 0; /* Space around headers */
-}
-
-/* Project card styles */
-.project-card {
-    width: 30%; /* Adjust width for project cards */
-    margin: 10px; /* Margin between cards */
-    padding: 20px; /* Padding for card content */
-    border: 1px solid #ccc; /* Border for cards */
-    border-radius: 5px; /* Rounded corners */
-    transition: box-shadow 0.3s; /* Animation for hover effect */
-    background-color: #f9f9f9; /* Light background for cards */
-}
-
-.project-card:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
-}
-.outer-box {
-    background-color: #f9f9f9; /* Light background color for the outer box */
-    padding: 20px; /* Padding for the outer box */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin: 20px 0; /* Space between boxes */
-    text-align: center; /* Center text in the outer box */
-}
-
-.inner-box {
-    background-color: #ffffff; /* White background color for the inner box */
-    padding: 15px; /* Padding for the inner box */
-    border: 2px solid #ccc; /* Border for the inner box */
-    border-radius: 8px; /* Rounded corners for inner box */
-    margin-top: 15px; /* Space above the inner box */
-    text-align: center; /* Center text in the inner box */
-}
-ul, ol {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-}
-
-
-
-/* Footer styles */
-.footer {
-    background-color: #333; /* Footer background */
-    color: white; /* Footer text color */
-    padding: 20px; /* Padding for footer */
-    text-align: center; /* Center footer content */
-}
-
-.footer a {
-    color: orange; /* Link color in footer */
-    text-decoration: underline; /* Underlined text for links */
-}
-
-.footer a:hover {
-    text-decoration: none; /* Remove underline on hover */
-}
-
-.footer button {
-    padding: 10px 20px; /* Padding for button */
-    background-color: orange; /* Button background color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    color: white; /* Button text color */
-    cursor: pointer; /* Pointer cursor */
-    transition: background-color 0.3s; /* Smooth background transition */
-}
-.footer-container {
-    display: flex; /* Use flexbox to align items */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Align items vertically */
-    gap: 20px; /* Space between elements */
-}
-
-.footer-container button,
-.footer-container a,
-.footer-container p {
-    display: inline-block; /* Ensure elements stay on the same line */
-    margin: 0; /* Remove default margins */
-}
-
-.footer-container p {
-    margin-left: 10px; /* Adjust margin for phone number */
-}
-
-
-.footer button:hover {
-    background-color: darkorange; /* Darker background on hover */
-}
+    <footer class="footer">
+        <div class="footer-container">
+            <button onclick="window.location.href='mailto:reanna.vardhanapu@gmail.com'">Contact Me</button>
+            <a href="https://www.linkedin.com/in/reanna-vardhanapu/" target="_blank">LinkedIn</a>
+            <p>571-498-0050</p>
+        </div>
+    </footer>
+</body>
+</html>
