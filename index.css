@@ -64,7 +64,13 @@ nav a:hover {
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: transform 0.3s; /* Animation for hover effect */
+    
 }
+
+.about-me {
+    text-align: center; /* Center text only for About Me section */
+}
+
 
 .section:hover {
     transform: translateY(-2px); /* Lift effect on hover */
@@ -91,6 +97,22 @@ h2, h3 {
 .project-card:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
 }
+.outer-box {
+    background-color: #f9f9f9; /* Light background color for the outer box */
+    padding: 20px; /* Padding for the outer box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px 0; /* Space between boxes */
+}
+
+.inner-box {
+    background-color: #ffffff; /* White background color for the inner box */
+    padding: 15px; /* Padding for the inner box */
+    border: 2px solid #ccc; /* Border for the inner box */
+    border-radius: 8px; /* Rounded corners for inner box */
+    margin-top: 15px; /* Space above the inner box */
+}
+
 
 /* Footer styles */
 .footer {
