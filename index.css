@@ -69,6 +69,17 @@ nav a:hover {
 .about-me {
     text-align: center; /* Center text only for About Me section */
 }
+.about-me-content {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+}
+
+.about-me-image {
+    width: 150px; /* Adjust the size as needed */
+    border-radius: 50%; /* Make the image circular */
+    margin-left: 20px; /* Space between text and image */
+}
+
 
 .section:hover {
     transform: translateY(-2px); /* Lift effect on hover */
