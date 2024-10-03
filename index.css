@@ -148,6 +148,24 @@ ul, ol {
     cursor: pointer; /* Pointer cursor */
     transition: background-color 0.3s; /* Smooth background transition */
 }
+.footer-container {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Space between elements */
+}
+
+.footer-container button,
+.footer-container a,
+.footer-container p {
+    display: inline-block; /* Ensure elements stay on the same line */
+    margin: 0; /* Remove default margins */
+}
+
+.footer-container p {
+    margin-left: 10px; /* Adjust margin for phone number */
+}
+
 
 .footer button:hover {
     background-color: darkorange; /* Darker background on hover */
