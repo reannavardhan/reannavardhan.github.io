@@ -1,0 +1,124 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box; /* Make box-sizing consistent */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Body styles */
+body {
+    background: linear-gradient(to bottom, #ff7f50, #ffffff); /* Ombre from dark orange to white */
+    font-family: 'Times New Roman', serif; /* All text in Times New Roman */
+    color: #333; /* Text color */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Navigation styles */
+nav {
+    background-color: black; /* Header background */
+    padding: 10px; /* Padding for nav */
+    text-align: center; /* Center nav items */
+}
+
+nav a {
+    color: white; /* Link color */
+    margin: 15px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make links bold */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: orange; /* Hover color for links */
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center; /* Center text */
+    padding: 50px 20px; /* Padding for hero section */
+}
+
+.hero h1 {
+    font-size: 3em; /* Font size for name */
+    font-style: italic; /* Italic style */
+    margin: 0; /* Remove margin */
+}
+
+.hero h2 {
+    font-size: 1.5em; /* Font size for welcome text */
+    margin-top: 10px; /* Space between h1 and h2 */
+}
+
+/* Container styles */
+.container {
+    width: 80%; /* Container width */
+    margin: 0 auto; /* Center container */
+}
+
+/* Section styles */
+.section {
+    padding: 20px; /* Padding for sections */
+    margin: 20px 0; /* Space between sections */
+    background-color: white; /* White background for sections */
+    color: black; /* Black text color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.section:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Header styles */
+h2, h3 {
+    text-align: center; /* Center all h2 and h3 headers */
+    font-weight: bold; /* Make headers bold */
+    margin: 20px 0; /* Space around headers */
+}
+
+/* Project card styles */
+.project-card {
+    width: 30%; /* Adjust width for project cards */
+    margin: 10px; /* Margin between cards */
+    padding: 20px; /* Padding for card content */
+    border: 1px solid #ccc; /* Border for cards */
+    border-radius: 5px; /* Rounded corners */
+    transition: box-shadow 0.3s; /* Animation for hover effect */
+    background-color: #f9f9f9; /* Light background for cards */
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333; /* Footer background */
+    color: white; /* Footer text color */
+    padding: 20px; /* Padding for footer */
+    text-align: center; /* Center footer content */
+}
+
+.footer a {
+    color: orange; /* Link color in footer */
+    text-decoration: underline; /* Underlined text for links */
+}
+
+.footer a:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.footer button {
+    padding: 10px 20px; /* Padding for button */
+    background-color: orange; /* Button background color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.footer button:hover {
+    background-color: darkorange; /* Darker background on hover */
+}
